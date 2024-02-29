@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="kakaotalk">
+        <figure>
+            <a href="https://open.kakao.com/o/szeGaZcg">
+                <img src="./img/카카오톡.png" alt="kt">
+                <figcaption>카카오톡 문의하기</figcaption>
+            </a>
+        </figure>
+    </div>
+    <div class="container">
+        <header>
+            <h1>경매컨설팅</h1>
+            <p>부동산을 디자인하다</p>
+            <p>여유자금 마련</p>
+        </header>
+        <article class="main_img">
+            <img src="./img/1.png" alt="이미지">
+        </article>
+        <article>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/슬라이드 이미지/1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/슬라이드 이미지/2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/슬라이드 이미지/3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/슬라이드 이미지/4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/슬라이드 이미지/5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/슬라이드 이미지/6.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/슬라이드 이미지/7.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </article>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+    </div>
+</body>
+
+</html>
